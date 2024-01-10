@@ -1,0 +1,210 @@
+@import url(../updown.css);
+.background{
+    width: auto;
+    height: auto;
+    /* background: url(source/lines.png); */
+    background-color: #CCCFD3;
+    background-repeat: no-repeat;
+    background-size:100%;
+    margin: auto;
+    font-family: Montserrat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+}
+body{
+    background-color: #CCCFD3;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    transform: translateY(-8339px);
+}
+.lines{
+    position: relative;
+}
+.now{
+    color: #C3073F;
+}
+.middle{
+    display: flex;
+    width: 1746px;
+    height: 409px;
+    flex-shrink: 0;
+    margin-top: 220px;
+    margin-left: 620px;
+    margin-bottom: 200px;
+    animation: move1 2s ease;
+    z-index: 0;
+}
+.middleleft{
+    width: 550px;
+    height: 409px;
+    flex-shrink: 0;
+}
+.middleright{
+    width: 1205px;
+    height: 1027px;
+    flex-shrink: 0;
+    margin-top: -195px;
+}
+.text{
+    width: 550px;
+    height: 222px;
+    flex-shrink: 0;  
+    color: rgba(26, 26, 29, 0.90);
+    font-family: Montserrat;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin-bottom: 101px;
+}
+.button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 43px;
+    background: #C3073F;
+    box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.80);
+    width: 413px;
+    height: 86px;
+    flex-shrink: 0;
+    color: #EDDEDE;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+.button:hover{
+    transform: scale(1.1);
+}
+.go{
+    text-decoration: none;
+}
+@keyframes move1{
+    from {
+        opacity: 0;
+        transform: translateX(500px);
+    }
+  
+    to {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+@keyframes move2{
+    from {
+        opacity: 0;
+        margin-right: -500px;
+    }
+  
+    to {
+        opacity: 1;
+        margin-right: 0px;
+    }
+}
+@keyframes moveline11{
+    from {
+        opacity: 1;
+        top: 0px;
+        margin-right: 0px;
+    }
+    25%{
+        top: 100px;
+        margin-right: 125px;
+    }
+    50%{
+        opacity: 0;
+        top: 0px;
+        margin-right: 0px;
+    }
+    75%{
+        top: -100px;
+        margin-right: -125px;
+    }
+    to {
+        opacity: 1;
+        top: 0px;
+        margin-right: 0px;
+    }
+}
+@keyframes moveline22{
+    from {
+        opacity: 1;
+        top: 0px;
+        margin-right: 0px;
+    }
+    25%{
+        top: -100px;
+        margin-right: -125px;
+    }
+    50%{
+        opacity: 0;
+        top: 0px;
+        margin-right: 0px;
+    }
+    75%{
+        top: 100px;
+        margin-right: 125px;
+    }
+    to {
+        opacity: 1;
+        top: 0px;
+        margin-right: 0px;
+    }
+}
+@keyframes moveline33{
+    from {
+        opacity: 1;
+        top: 0px;
+        margin-right: 0px;
+    }
+    25%{
+        top: -100px;
+        margin-right: -125px;
+    }
+    50%{
+        opacity: 0;
+        top: 0px;
+        margin-right: 0px;
+    }
+    75%{
+        top: 100px;
+        margin-right: 125px;
+    }
+    to {
+        opacity: 1;
+        top: 0px;
+        margin-right: 0px;
+    }
+}
+@keyframes moveline44{
+    from {
+        opacity: 1;
+        top: 0px;
+        margin-right: 0px;
+    }
+    25%{
+        top: 100px;
+        margin-right: 125px;
+    }
+    50%{
+        opacity: 0;
+        top: 0px;
+        margin-right: 0px;
+    }
+    75%{
+        top: -100px;
+        margin-right: -125px;
+    }
+    to {
+        opacity: 1;
+        top: 0px;
+        margin-right: 0px;
+    }
+}
