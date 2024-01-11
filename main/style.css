@@ -24,7 +24,7 @@ body{
     align-items: center;
     justify-content: end;
     margin-right: 110px;
-    margin-left: 310px;
+    margin-left: -260px;
     margin-top: 50px;
     margin-bottom: 78px;
 }
@@ -99,14 +99,35 @@ body{
 
 }
 .car{
-    width: 1072px;
-    height: 1060px;
+    display: flex;
+    width: 656px;
+    height: 656px;
+    border-radius: 656px;
+    background-color: #1A1A1D;
+    box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.80);
     flex-shrink: 0;
     align-items: center;
     justify-content: end;
     animation-name: move1;
     animation-duration: 2s;
     animation-timing-function: ease;
+    margin-left: 150px;
+}
+.carpng{
+    transform: translateX(2001px);
+    z-index: 2;
+}
+.car2{
+    display: flex;
+    flex-direction: column;
+    width: 2000px;
+    height: 656px;
+    border-radius: 656px;
+    background: transparent;
+    flex-shrink: 0;
+    align-items: end;
+    justify-content: start;
+    overflow: hidden;
 }
 body{
     margin: 0;
@@ -115,11 +136,23 @@ body{
 @keyframes move1{
     from {
         opacity: 0;
-        transform: translateX(100px);
+        margin-right:-100px
     }
   
     to {
         opacity: 1;
+        margin-right: 0px;
+    }
+}
+@keyframes move2{
+    from {
+        transform: translateX(100px);
+    }
+    50%{
         transform: translateX(0px);
     }
+    to{
+        transform: translateX(100px);
+    }
+    
 }
