@@ -1,0 +1,184 @@
+@import url(../updown.css);
+.background{
+    width: auto;
+    height: auto;
+    background-color: #CCCFD3;
+    background-repeat: no-repeat;
+    background-size:100%;
+    margin: auto;
+    font-family: Montserrat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+}
+body{
+    background-color: #CCCFD3;
+}
+.middle{
+    width: 1890px;
+    height: 700px;
+    flex-shrink: 0;
+    float: right;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    margin-right: 110px;
+    margin-left: -260px;
+    margin-top: 50px;
+    margin-bottom: 78px;
+}
+.maintext{
+    width: 620px;
+    height: 100px;
+    color: rgba(26, 26, 29, 0.9);
+    font-family: Montserrat;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+.doptext{
+    width: 470px;
+    height: 25px;
+    color: rgba(26, 26, 29, 0.9);
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-top: 70px;
+    margin-bottom: 70px;
+    }
+.middleleft{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    width: 620px;
+    height: 463px;
+    flex-shrink: 0;
+    animation-name: move1;
+    animation-duration: 2s;
+    animation-timing-function: ease;
+}
+.button{
+    display: flex;
+    /*background: url(source/particle.png);*/
+    width: 500px;
+    height: 205px;
+    flex-shrink: 0;
+    justify-content: flex-start;
+    position: absolute;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+.button:hover{
+    transform: scale(1.05);
+}
+.buttonsec{
+    display: flex;
+    align-items: flex-start; 
+    justify-content: flex-start;
+    flex-direction: column;
+    width: 488px;
+    height: 205px;
+    flex-shrink: 0;
+}
+
+.button{
+    width: 413px;
+    height: 86px;
+    flex-shrink: 0;
+    border-radius: 43px;
+    background: #C3073F;
+    box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.80);
+    display: flex;
+    color: #EDDEDE;
+    font-weight: 600;
+    font-size: 40px;
+    justify-content: center;
+    align-items: center;
+    margin-left: 75px;
+    margin-top: 57px;
+
+}
+.car{
+    display: flex;
+    width: 656px;
+    height: 656px;
+    border-radius: 656px;
+    background-color: #1A1A1D;
+    box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.80);
+    flex-shrink: 0;
+    align-items: center;
+    justify-content: end;
+    animation-name: move1;
+    animation-duration: 2s;
+    animation-timing-function: ease;
+    margin-left: 150px;
+}
+.carpng{
+    transform: translateX(2001px);
+    z-index: 2;
+}
+.car2{
+    display: flex;
+    flex-direction: column;
+    width: 2000px;
+    height: 656px;
+    border-radius: 656px;
+    background: transparent;
+    flex-shrink: 0;
+    align-items: end;
+    justify-content: start;
+    overflow: hidden;
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+@keyframes move1{
+    from {
+        opacity: 0;
+        margin-right:-100px
+    }
+  
+    to {
+        opacity: 1;
+        margin-right: 0px;
+    }
+}
+@keyframes move2{
+    from {
+        transform: translateX(100px);
+    }
+    50%{
+        transform: translateX(0px);
+    }
+    to{
+        transform: translateX(100px);
+    }
+    
+}
+@keyframes move3{
+    from {
+        opacity: 0;
+        transform: translateX(400px);
+    }
+  
+    to {
+        opacity: 1;
+        transform: translateX(100px);
+    }
+}
+@keyframes move4{
+    from {
+        transform: translateX(0px);
+    }
+    50%{
+        transform: translateX(-20px);
+    }
+    to {
+        transform: translateX(0px);
+    }
+}
